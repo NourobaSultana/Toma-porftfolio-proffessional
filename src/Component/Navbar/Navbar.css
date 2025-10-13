@@ -1,0 +1,11 @@
+.active{
+    text-decoration: underline;
+    text-decoration-thickness: 2px ;
+    color: green;
+    font: bold;
+
+}
+
+.active li{
+    color: green;
+}
