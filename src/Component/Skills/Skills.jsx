@@ -8,7 +8,7 @@ const react = "/react.svg";
 
 const Skills = () => {
   return (
-    <div className="mt-16 px-4">
+    <div className="mt-12 px-4">
       <div className="text-center">
         <button className="btn rounded-2xl font-bold">Skills</button>
         <p className="mt-4 text-sm md:text-base font-bold">

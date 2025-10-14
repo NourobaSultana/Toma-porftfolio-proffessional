@@ -3,7 +3,7 @@ const aboutImage = "/714517d7-f62a-416b-bfca-14b912b3a0a5.jpg";
 import { FaSmile } from "react-icons/fa";
 const About = () => {
   return (
-    <div className="mt-4">
+    <div className="mt-12">
       <div className="flex justify-center">
         <button className="btn items-center rounded-2xl p-2 font-bold ">
           About me
@@ -22,11 +22,11 @@ const About = () => {
 
               <img
                 src={aboutImage}
-                className="max-w-sm rounded-lg shadow-2xl w-[260px] h-[360px]"
+                className="max-w-sm  rounded-lg shadow-2xl w-[260px] h-[360px]"
               />
             </div>
 
-            <div>
+            <div className="mt-4">
               <h1 className="text-2xl font-bold">
                 Curious about me? Here you have it:
               </h1>

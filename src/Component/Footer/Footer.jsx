@@ -3,13 +3,22 @@ import { MdOutlineEmail, MdOutlineCall } from "react-icons/md";
 import { FaGithub, FaRegCopy } from "react-icons/fa";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { FaFigma } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
 
 const love = "/love-heart-.png";
 const Footer = () => {
   const handleCopy = (text) => {
-    navigator.clipboard.writeText(text);
-    alert(`${text} copied!`);
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        // alert("Copied! ✅");
+        toast("Copied!");
+      })
+      .catch(() => {
+        alert("Failed to copy ❌");
+      });
   };
+
   return (
     <div>
       <div className="mt-12 px-4">
@@ -35,6 +44,7 @@ const Footer = () => {
             <h2 className="text-xl md:text-2xl font-bold">
               toma.yyy80@gmail.com
             </h2>
+            <ToastContainer />
             <button
               onClick={() => handleCopy("toma.yyy80@gmail.com")}
               className="ml-[3px] text-lg md:text-xl hover:text-blue-500 transition"

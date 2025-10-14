@@ -3,11 +3,19 @@ import { MdOutlineEmail, MdOutlineCall } from "react-icons/md";
 import { FaGithub, FaRegCopy } from "react-icons/fa";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { FaFigma } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
 
 const Contact = () => {
   const handleCopy = (text) => {
-    navigator.clipboard.writeText(text);
-    alert(`${text} copied!`);
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        // alert("Copied! ✅");
+        toast("Copied!");
+      })
+      .catch(() => {
+        alert("Failed to copy ❌");
+      });
   };
 
   return (
@@ -28,6 +36,7 @@ const Contact = () => {
         <div className="grid gap-6 sm:grid-cols-2">
           {/* Email Card */}
           <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition">
+            <ToastContainer />
             <MdOutlineEmail className="text-blue-600 text-4xl mb-3" />
             <p className="text-gray-700 font-semibold">Email Me</p>
             <p className="text-sm text-gray-600">toma.yyy80@gmail.com</p>

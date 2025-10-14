@@ -40,7 +40,7 @@ const Navbar = () => {
 
   const handleDownloadResume = () => {
     const cvUrl =
-      "https://docs.google.com/document/d/1coXG8Q2nHtblzzgdTfTHEeuc1Yb8xtXDc1ypuizCLmg/edit?tab=t.0";
+      "https://drive.google.com/file/d/1hCMjprUD0_VAq-yKCa-wKMLqFMFgaIub/view";
     const link = document.createElement("a");
     link.href = cvUrl;
     link.download = "Nouroba-Sultana-Toma-CV.pdf";
