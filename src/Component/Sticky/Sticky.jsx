@@ -10,7 +10,7 @@ const SideNavbar = () => {
       <div
         className="hidden md:flex fixed top-1/2 -translate-y-1/2 left-0 w-[55px]
         shadow-xl rounded-r-2xl py-5 flex-col items-center gap-7 z-50
-        bg-white dark:bg-gray-900 border-r border-gray-300 dark:border-gray-700"
+          border-r border-gray-300 dark:border-gray-700"
       >
         {/* Home */}
         <div className="relative group">

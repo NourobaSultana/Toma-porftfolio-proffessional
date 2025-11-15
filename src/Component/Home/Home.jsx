@@ -12,6 +12,7 @@ import { FaHandSparkles } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import "/home/toma/best-website/toma-portfolio/src/Component/Home/Home.css";
 import Sticky from "/home/toma/best-website/toma-portfolio/src/Component/Sticky/Sticky.jsx";
+import Projects from "../Projects/Projects";
 
 const Home = () => {
   const [rotate, setRotate] = useState(false);
@@ -124,12 +125,19 @@ const Home = () => {
       <section className="max-w-[1000px] mx-auto">
         <About></About>
       </section>
+
       <section className="max-w-[1000px] mx-auto">
         <Skills></Skills>
       </section>
+        
+        <section>
+          <Projects></Projects>
+        </section>
+
       <section className="max-w-[1000px] mx-auto">
         <Footer></Footer>
       </section>
+
       <section>
         <Sticky></Sticky>
       </section>

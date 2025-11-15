@@ -7,7 +7,9 @@ const About = () => {
     <div className="mt-16 sm:mt-20 lg:mt-24">
       {/* Title Button */}
       <div className="flex justify-center">
-        <span className="p-3 bg-[#52b788] rounded-2xl font-bold">About me</span>
+        <span className="p-3 bg-[#52b788] rounded-2xl font-bold text-white">
+          About me
+        </span>
       </div>
 
       {/* Main Section */}

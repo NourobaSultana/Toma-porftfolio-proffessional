@@ -4,6 +4,7 @@ import { FaGithub, FaRegCopy } from "react-icons/fa";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { FaFigma } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
+import Sticky from '/home/toma/best-website/toma-portfolio/src/Component/Sticky/Sticky.jsx'
 
 const Contact = () => {
   const handleCopy = (text) => {
@@ -19,7 +20,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-16  px-4">
+    <>
+     
+         <section id="contact" className="py-16  px-4">
       <div className="max-w-4xl mx-auto text-center space-y-8">
         {/* Heading */}
         <h2 className="text-3xl md:text-2xl font-bold ">
@@ -96,6 +99,14 @@ const Contact = () => {
         </p>
       </div>
     </section>
+
+    <section>
+       <Sticky></Sticky>
+    </section>
+    
+    </>
+
+    
   );
 };
 

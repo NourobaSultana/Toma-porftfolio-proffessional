@@ -13,7 +13,9 @@ const Skills = () => {
   return (
     <div className="mt-12 px-4">
       <div className="text-center">
-        <span className="p-3 bg-[#52b788] rounded-2xl font-bold">Skills</span>
+        <span className="text-white p-3 bg-[#52b788] rounded-2xl font-bold">
+          Skills
+        </span>
         <p className="mt-6 text-3xl md:text-base font-bold">
           The skills, tools and technologies I am really good at:
         </p>

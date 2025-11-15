@@ -26,7 +26,7 @@ const Footer = () => {
         <footer className="text-base-content rounded p-6 md:p-10 max-w-4xl mx-auto ">
           {/* Button */}
           <div className="flex justify-center">
-            <button className="btn btn-info rounded-2xl font-semibold px-4 md:px-6">
+            <button className="text-white btn btn-info rounded-2xl font-semibold px-4 md:px-6">
               Get in touch
             </button>
           </div>

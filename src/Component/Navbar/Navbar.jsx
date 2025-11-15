@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router";
-import { BsSignIntersectionSide } from "react-icons/bs";
-import "./Navbar.css";
+import "./Navbar.css"
+import logo from '../../assets/N.png'
 
 const Navbar = () => {
   const themes = ["light", "dark"];
   const [theme, setTheme] = useState("light");
   const [open, setOpen] = useState(false);
-  const [mobileProjects, setMobileProjects] = useState(false);
+  
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -39,14 +39,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <span className={`text-3xl text-yellow-500 font-bold tracking-wide ${textColor}`}>
-              <BsSignIntersectionSide />
-            </span>
+          <div className="">
+            <img className="w-18 h-16"  src={logo} alt="" />
           </div>
-
+        
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
+            
             <NavLink to="/" className={`${textColor} hover:text-blue-500`}>Home</NavLink>
             <NavLink to="/about" className={`${textColor} hover:text-blue-500`}>About</NavLink>
             <NavLink to="/contact" className={`${textColor} hover:text-blue-500`}>Contact</NavLink>
