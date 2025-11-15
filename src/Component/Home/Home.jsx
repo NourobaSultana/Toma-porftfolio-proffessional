@@ -6,38 +6,57 @@ import { CiLocationOn } from "react-icons/ci";
 import About from "../About/About";
 import Skills from "../Skills/Skills";
 import Footer from "../Footer/Footer";
-const hello = "/1f44b.jpg";
+const hello = "/c6e00bf09f5e476a4da3e69620bd7341.jpg";
 const image = "/sample-01 (1).jpg";
+import { FaHandSparkles } from "react-icons/fa6";
+import { useEffect, useState } from "react";
+import "/home/toma/best-website/toma-portfolio/src/Component/Home/Home.css";
+import Sticky from "/home/toma/best-website/toma-portfolio/src/Component/Sticky/Sticky.jsx";
 
 const Home = () => {
+  const [rotate, setRotate] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setRotate(true); // 5 sec por rotation start hobe
+    }, 1000); // 5000ms = 5 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
       // first section
       <section>
-        <div className=" px-4 sm:px-8 md:px-16 lg:px-24 bg-base-100">
-          <div className="hero-content flex flex-col lg:flex-row-reverse items-center lg:items-start gap-8 lg:gap-24">
+        <div className=" px-4 sm:px-8 md:px-16 lg:px-24 bg-base-100 mt-12">
+          <div className="hero-content max-w-[1000px] mx-auto flex flex-col lg:flex-row-reverse items-center lg:items-start gap-8 lg:gap-24">
             {/* Profile Image */}
             <img
               src={image}
               alt="Profile"
-              className="rounded-full border-2 border-green-500 w-36 h-36 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 object-cover"
+              className={`rounded-full border-2 border-green-500 w-36 h-36 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-72 lg:h-72 object-cover rotate-image-3d ${
+                rotate ? "start" : "end"
+              }`}
             />
 
             {/* Text Section */}
             <div className="flex flex-col gap-4 lg:w-1/2">
               {/* Name + Waving Icon */}
               <div className="flex flex-wrap items-center gap-2">
-                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+                <h3
+                  className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold rotate-3d ${
+                    rotate ? "start" : "end"
+                  }`}
+                >
                   Hi, I'm Toma
                 </h3>
-                <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-                  {/* <PiHandWavingDuotone /> */}
-                  <img className="w-[60px]" src={hello} alt="" />
+
+                <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-yellow-400">
+                  <FaHandSparkles />
                 </span>
               </div>
 
               {/* About / Description */}
-              <p className="text-sm sm:text-base md:text-lg lg:text-lg text-gray-700 leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg lg:text-lg  leading-relaxed">
                 I am a passionate Front-End Developer with a strong focus on
                 building responsive, user-friendly, and visually appealing web
                 applications. Skilled in HTML, CSS, JavaScript, React, Tailwind
@@ -48,7 +67,7 @@ const Home = () => {
               </p>
 
               {/* Location */}
-              <div className="flex items-center gap-2 text-gray-600">
+              <div className="flex items-center gap-2 ">
                 <CiLocationOn className="text-lg sm:text-xl md:text-2xl" />
                 <p className="text-sm sm:text-base md:text-base lg:text-base">
                   Farmgate, Bangladesh
@@ -102,14 +121,17 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="max-w-[1000px] mx-auto">
         <About></About>
       </section>
-      <section>
+      <section className="max-w-[1000px] mx-auto">
         <Skills></Skills>
       </section>
-      <section>
+      <section className="max-w-[1000px] mx-auto">
         <Footer></Footer>
+      </section>
+      <section>
+        <Sticky></Sticky>
       </section>
     </>
   );

@@ -1,11 +1,10 @@
-.active{
-    text-decoration: underline;
-    text-decoration-thickness: 2px ;
-    color: green;
-    font: bold;
-
+.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: rgb(4, 4, 188);
+  font-weight: 600;
 }
 
-.active li{
-    color: green;
+.active li {
+  color: rgb(4, 4, 188);
 }

@@ -8,9 +8,11 @@ const Theme = () => {
   //     document.documentElement.setAttribute("data-theme", theme);
   //   }, [theme]);
 
+
+
   return (
     <div>
-      <h2>jdhfkjskjhfkjshfkjhfk</h2>
+      
     </div>
   );
 };

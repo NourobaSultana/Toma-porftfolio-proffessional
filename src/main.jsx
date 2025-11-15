@@ -11,6 +11,8 @@ import Contact from "./Component/Contact/Contact.jsx";
 import Root from "./Root.jsx";
 import Skills from "./Component/Skills/Skills.jsx";
 import Footer from "./Component/Footer/Footer.jsx";
+import LoadingCounter from "./Component/LoadingCounter.jsx";
+import Sticky from "/home/toma/best-website/toma-portfolio/src/Component/Sticky/Sticky.jsx";
 
 const router = createBrowserRouter([
   {
@@ -39,12 +41,18 @@ const router = createBrowserRouter([
         path: "footer",
         Component: Footer,
       },
+      {
+        path: "sticky",
+        Component: Sticky,
+      },
     ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <LoadingCounter duration={1000}>
+      <RouterProvider router={router}></RouterProvider>
+    </LoadingCounter>
   </StrictMode>
 );
