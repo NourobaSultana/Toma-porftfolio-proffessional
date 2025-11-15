@@ -1,5 +1,8 @@
 import React from "react";
+import { TbWorld } from "react-icons/tb";
+import doctor from "/home/toma/best-website/toma-portfolio/public/Screenshot From 2025-11-16 00-15-58.png";
 
+import english from "/home/toma/best-website/toma-portfolio/public/Screenshot From 2025-11-16 00-15-37.png";
 const Projects = () => {
   // hero-content max-w-[1000px] mx-auto flex flex-col lg:flex-row-reverse items-center lg:items-start gap-8 lg:gap-24
   return (
@@ -15,52 +18,142 @@ const Projects = () => {
 
       <div className="flex flex-wrap justify-center mt-12 gap-12">
         {/* Card 1 */}
-        <div className="relative p-[12px] rounded-xl animate-border bg-gradient-to-r from-orange-500 via-yellow-400 to-red-500 bg-[length:200%_200%]">
-          <div className="card bg-base-100 w-96 shadow-sm rounded-xl overflow-hidden">
+        <div className="relative w-96 mx-auto">
+          {/* TOP FULL GRADIENT BORDER */}
+          <div className="absolute top-0 left-0 w-full h-[16px] bg-gradient-to-r from-red-500 via-orange-400 to-yellow-500 rounded-t-xl z-20"></div>
+          {/* LEFT HALF GRADIENT BORDER */}
+          <div className="absolute top-0 left-0 h-[180px] w-[16px] bg-gradient-to-b from-red-500 via-orange-400 to-yellow-500 rounded-l-xl z-20"></div>
+          {/* RIGHT HALF GRADIENT BORDER */}
+          <div className="absolute top-0 right-0 h-[180px] w-[16px] bg-gradient-to-b from-yellow-500 via-orange-400 to-red-500 rounded-r-xl z-20"></div>
+          {/* BOTTOM SHADOW ONLY
+          <div className="absolute bottom-0 left-0 w-full h-[10px] shadow-[0_6px_15px_rgba(0,0,0,0.4)] rounded-b-xl z-10"></div> */}
+          {/* CARD */}
+          <div className="relative bg-white rounded-xl shadow-lg overflow-hidden z-0 border border-gray-200">
             <figure>
               <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes"
+                src={doctor}
+                alt=""
+                className="w-full h-[180px] blur-[1px]"
               />
             </figure>
-            <div className="card-body">
-              <h2 className="card-title">
-                Card Title
-                <div className="badge badge-secondary">NEW</div>
+
+            <div className="p-4 text-black">
+              <h2 className="font-bold text-xl flex items-center gap-2">
+                Doctor Appointment
+                <span className="badge badge-secondary">NEW</span>
               </h2>
-              <p>
+
+              <p className="mt-2">
                 A card component has a figure, a body part, and inside body
-                there are title and actions parts
+                there are title and actions parts.
               </p>
-              <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div>
-                <div className="badge badge-outline">Products</div>
+
+              <div className="flex flex-wrap mt-2 gap-2 max-w-[400px] mx-auto ">
+                <div className="badge badge-outline bg-black text-white">
+                  Html
+                </div>
+                <div className="badge badge-outline  bg-black text-white">
+                  Css
+                </div>
+                <div className="badge badge-outline  bg-black text-white">
+                  TailwindCss
+                </div>
+                <div className="badge badge-outline  bg-black text-white">
+                  Javascript
+                </div>
+                <div className="badge badge-outline  bg-black text-white">
+                  React
+                </div>
+                <div className="badge badge-outline  bg-black text-white">
+                  Netlify
+                </div>
+                <div className="badge badge-outline  bg-black text-white">
+                  DaisyUi
+                </div>
+              </div>
+              <div className="flex gap-2 justify-start mt-2">
+                <a
+                  href="https://delicate-froyo-6fbd6d.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="badge badge-outline p-4 bg-black text-white cursor-pointer flex items-center gap-2 hover:bg-gray-800 transition"
+                >
+                  <span className="text-xl">
+                    <TbWorld />
+                  </span>
+                  Website
+                </a>
               </div>
             </div>
           </div>
         </div>
 
         {/* Card 2 */}
-        <div className="relative p-[12px] rounded-xl animate-border bg-gradient-to-r from-green-500 via-blue-400 to-green-300 bg-[length:200%_200%]">
-          <div className="card bg-base-100 w-96 shadow-sm rounded-xl overflow-hidden">
+        <div className="relative w-96 mx-auto">
+          {/* TOP FULL GRADIENT BORDER */}
+          <div className="absolute top-0 left-0 w-full h-[16px] bg-gradient-to-r from-gray-500 via-gray-300 to-gray-200 rounded-t-xl z-20"></div>
+          {/* LEFT HALF GRADIENT BORDER */}
+          <div className="absolute top-0 left-0 h-[180px] w-[16px] bg-gradient-to-b from-gray-500 via-gray-300 to-gray-200 rounded-l-xl z-20"></div>
+          {/* RIGHT HALF GRADIENT BORDER */}
+          <div className="absolute top-0 right-0 h-[180px] w-[16px] bg-gradient-to-b from-gray-200 via-gray-300 to-gray-500 rounded-r-xl z-20"></div>
+          {/* BOTTOM SHADOW ONLY
+          <div className="absolute bottom-0 left-0 w-full h-[10px] shadow-[0_6px_15px_rgba(0,0,0,0.4)] rounded-b-xl z-10"></div> */}
+          {/* CARD */}
+          <div className="relative bg-white rounded-xl shadow-lg overflow-hidden z-0 border border-gray-200">
             <figure>
               <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes"
+                src={english}
+                alt=""
+                className="w-full h-[180px] blur-[1px]"
               />
             </figure>
-            <div className="card-body">
-              <h2 className="card-title">
-                Card Title
-                <div className="badge badge-secondary">NEW</div>
+
+            <div className="p-4 text-black">
+              <h2 className="font-bold text-xl flex items-center gap-2">
+                English vocabulary
+                <span className="badge badge-secondary">NEW</span>
               </h2>
-              <p>
+
+              <p className="mt-2">
                 A card component has a figure, a body part, and inside body
-                there are title and actions parts
+                there are title and actions parts.
               </p>
-              <div className="card-actions justify-end">
-                <div className="badge badge-outline">Fashion</div>
-                <div className="badge badge-outline">Products</div>
+
+              <div className="flex flex-wrap gap-2 max-w-[400px] mx-auto mt-2">
+                <div className="badge badge-outline bg-black text-white">
+                  Html
+                </div>
+                <div className="badge badge-outline  bg-black text-white">
+                  Css
+                </div>
+                <div className="badge badge-outline  bg-black text-white">
+                  TailwindCss
+                </div>
+                <div className="badge badge-outline  bg-black text-white">
+                  Javascript
+                </div>
+                <div className="badge badge-outline  bg-black text-white">
+                  React
+                </div>
+                <div className="badge badge-outline  bg-black text-white">
+                  Netlify
+                </div>
+                <div className="badge badge-outline  bg-black text-white">
+                  DaisyUi
+                </div>
+              </div>
+              <div className="flex gap-2 justify-start mt-2">
+                <a
+                  href="https://magnificent-entremet-a407ea.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="badge badge-outline p-4 bg-black text-white cursor-pointer flex items-center gap-2 hover:bg-gray-800 transition"
+                >
+                  <span className="text-xl">
+                    <TbWorld />
+                  </span>
+                  Website
+                </a>
               </div>
             </div>
           </div>
