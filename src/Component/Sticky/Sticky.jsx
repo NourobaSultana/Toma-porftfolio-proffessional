@@ -9,7 +9,7 @@ const SideNavbar = () => {
       {/* Desktop Left Sidebar */}
       <div
         className="hidden md:flex fixed top-1/2 -translate-y-1/2 left-0 w-[55px]
-        shadow-xl rounded-r-2xl py-5 flex-col items-center gap-7 z-50
+        shadow-xl rounded-r-2xl py-5 flex-col items-center gap-5 z-50
           border-r border-gray-300 dark:border-gray-700"
       >
         {/* Home */}
@@ -22,8 +22,10 @@ const SideNavbar = () => {
           >
             <GrHome />
           </a>
-          <span className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
-            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span
+            className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
+            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
             Home
           </span>
         </div>
@@ -38,8 +40,10 @@ const SideNavbar = () => {
           >
             <RiContactsFill />
           </a>
-          <span className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
-            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span
+            className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
+            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
             Contact
           </span>
         </div>
@@ -58,8 +62,10 @@ const SideNavbar = () => {
           >
             <BiLogoLinkedin />
           </a>
-          <span className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
-            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span
+            className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
+            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
             LinkedIn
           </span>
         </div>
@@ -76,8 +82,10 @@ const SideNavbar = () => {
           >
             <FaGithub />
           </a>
-          <span className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
-            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span
+            className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
+            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
             Github
           </span>
         </div>
@@ -94,51 +102,102 @@ const SideNavbar = () => {
           >
             <FaFacebook />
           </a>
-          <span className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
-            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span
+            className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
+            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
             Facebook
           </span>
         </div>
       </div>
 
       {/* Mobile Bottom Navigation */}
-      <div
-        className="md:hidden fixed bottom-0 left-1/2 -translate-x-1/2 w-[500px] max-w-full h-[60px] bg-white dark:bg-gray-900 border-t border-gray-300 dark:border-gray-700 flex justify-around items-center z-50 shadow-xl rounded-t-2xl mx-auto"
-      >
-        <a href="/" className="text-2xl hover:text-blue-500 dark:hover:text-blue-400 transition-transform duration-300 hover:scale-125 hover:-translate-x-2">
-          <GrHome />
-        </a>
-        
-        <a href="/contact" className="text-2xl hover:text-blue-500 dark:hover:text-blue-400 transition-transform duration-300 hover:scale-125 hover:-translate-x-2">
-          <RiContactsFill />
-        </a>
+      <div className="md:hidden fixed bottom-0 left-1/2 -translate-x-1/2 w-[500px] max-w-full h-[60px]  dark:bg-gray-900 border-t border-gray-300 dark:border-gray-700 flex justify-around items-center z-50 shadow-xl rounded-t-2xl mx-auto">
+        <div className="relative group">
+          <a
+            href="/"
+            className="text-2xl bg-black  rounded-2xl hover:text-blue-500 dark:hover:text-blue-400 transition-transform duration-300 hover:scale-125 hover:-translate-x-2"
+          >
+            <GrHome />
+          </a>
 
-        <a
-          href="https://www.linkedin.com/in/nouroba-sultana-toma-317a79378/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-2xl hover:text-blue-500 dark:hover:text-blue-400 transition-transform duration-300 hover:scale-125 hover:-translate-x-2"
-        >
-          <BiLogoLinkedin />
-        </a>
+          <span
+            className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
+            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            Home
+          </span>
+        </div>
 
-        <a
-          href="https://github.com/NourobaSultana"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-2xl hover:text-blue-500 dark:hover:text-blue-400 transition-transform duration-300 hover:scale-125 hover:-translate-x-2"
-        >
-          <FaGithub />
-        </a>
+        <div className="relative group">
+          <a
+            href="/contact"
+            className="text-2xl bg-black rounded-2xl hover:text-blue-500 dark:hover:text-blue-400 transition-transform duration-300 hover:scale-125 hover:-translate-x-2"
+          >
+            <RiContactsFill />
+          </a>
 
-        <a
-          href="https://www.facebook.com/nouroba.toma"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-2xl hover:text-blue-500 dark:hover:text-blue-400 transition-transform duration-300 hover:scale-125 hover:-translate-x-2"
-        >
-          <FaFacebook />
-        </a>
+          <span
+            className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
+            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            Contact
+          </span>
+        </div>
+        {/* <hr className="border border-gray-200 dark:border-gray-700 w-8 mx-auto" /> */}
+        <div className="relative group">
+          <a
+            href="https://www.linkedin.com/in/nouroba-sultana-toma-317a79378/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl bg-black  rounded-2xl hover:text-blue-500 dark:hover:text-blue-400 transition-transform duration-300 hover:scale-125 hover:-translate-x-2"
+          >
+            <BiLogoLinkedin />
+          </a>
+
+          <span
+            className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
+            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            LinkedIn
+          </span>
+        </div>
+
+        <div className="relative group">
+          <a
+            href="https://github.com/NourobaSultana"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl bg-black rounded-2xl hover:text-blue-500 dark:hover:text-blue-400 transition-transform duration-300 hover:scale-125 hover:-translate-x-2"
+          >
+            <FaGithub />
+          </a>
+
+          <span
+            className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
+            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            Github
+          </span>
+        </div>
+
+        <div className="relative group">
+          <a
+            href="https://www.facebook.com/nouroba.toma"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl bg-black rounded-2xl hover:text-blue-500 dark:hover:text-blue-400 transition-transform duration-300 hover:scale-125 hover:-translate-x-2"
+          >
+            <FaFacebook />
+          </a>
+
+          <span
+            className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 text-xs rounded
+            bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            Facebook
+          </span>
+        </div>
       </div>
     </>
   );

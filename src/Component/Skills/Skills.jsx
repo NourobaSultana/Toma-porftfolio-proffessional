@@ -9,14 +9,15 @@ import { BiLogoFirebase } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
 import { SiDaisyui } from "react-icons/si";
 import { TbBrandFigma } from "react-icons/tb";
+import { TbBrandNodejs } from "react-icons/tb";
 const Skills = () => {
   return (
-    <div className="mt-12 px-4">
-      <div className="text-center">
-        <span className="text-white p-3 bg-[#52b788] rounded-2xl font-bold">
+    <div className="mt-14 px-4">
+      <div className="text-center mt-18">
+        <span className="text-white  text-xl p-3 bg-[#52b788] rounded-2xl font-bold">
           Skills
         </span>
-        <p className="mt-6 text-3xl md:text-base font-bold">
+        <p className="mt-10 text-4xl md:text-base font-bold">
           The skills, tools and technologies I am really good at:
         </p>
       </div>
@@ -58,6 +59,13 @@ const Skills = () => {
             <RiReactjsFill />
           </span>
           <h2 className="mt-2 font-medium text-sm md:text-base">React</h2>
+        </div>
+
+        <div className="text-center">
+          <span className="text-3xl text-green-500">
+           <TbBrandNodejs />
+          </span>
+          <h2 className="mt-2 font-medium text-sm md:text-base">Node.js</h2>
         </div>
 
         <div className="text-center">

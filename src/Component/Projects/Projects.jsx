@@ -10,7 +10,7 @@ const Projects = () => {
       <h2 className="inline-block px-4 py-2 text-xl font-bold bg-[#52b788] text-white rounded-lg shadow-md]">
         My Projects
       </h2>
-      <h3 className="text-5xl font-bold mt-4">Check out some of my work</h3>
+      <h3 className="text-5xl font-bold mt-8">Check out some of my work</h3>
       <p className="mt-4 text-2xl text-gray-500">
         I'have worked different types of projects. I want to <br /> show my demo
         projects in below.
@@ -40,13 +40,18 @@ const Projects = () => {
             <div className="p-4 text-black">
               <h2 className="font-bold text-xl flex items-center gap-2">
                 Doctor Appointment
-                <span className="badge badge-secondary">NEW</span>
+                <span className="badge badge-secondary">Toma</span>
               </h2>
 
-              <p className="mt-2">
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts.
+              <p className="mt-2 text-left">
+                This website is for booking doctor appointment at home.The
+                functionality of this projects are booking appointment,
+                canceling appointment,doctor details, all doctors, doctor
+                avilability-day and time, doctor visit. All are included
+                here.But here i've worked with fake data.
               </p>
+
+              <p className="text-left text-gray-700 mt-2">Date: 20 Mar, 2025</p>
 
               <div className="flex flex-wrap mt-2 gap-2 max-w-[400px] mx-auto ">
                 <div className="badge badge-outline bg-black text-white">
@@ -111,13 +116,14 @@ const Projects = () => {
             <div className="p-4 text-black">
               <h2 className="font-bold text-xl flex items-center gap-2">
                 English vocabulary
-                <span className="badge badge-secondary">NEW</span>
+                <span className="badge badge-secondary">Toma</span>
               </h2>
 
-              <p className="mt-2">
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts.
+              <p className="mt-2 text-left">
+                This website presenting some vocabulary. You can also see the
+                details of one word, synonyms,antonyms, pronounciation.
               </p>
+              <p className="text-left text-gray-700 mt-2">Date: 12 Jan, 2025</p>
 
               <div className="flex flex-wrap gap-2 max-w-[400px] mx-auto mt-2">
                 <div className="badge badge-outline bg-black text-white">

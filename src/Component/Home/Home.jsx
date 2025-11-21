@@ -60,7 +60,7 @@ const Home = () => {
               <p className="text-sm sm:text-base md:text-lg lg:text-lg  leading-relaxed">
                 I am a passionate Front-End Developer with a strong focus on
                 building responsive, user-friendly, and visually appealing web
-                applications. Skilled in HTML, CSS, JavaScript, React, Tailwind
+                applications. Skilled in HTML, CSS, JavaScript, React, Node.js, MongoDB, Tailwind
                 CSS, and modern UI frameworks, I enjoy turning complex problems
                 into clean, efficient, and engaging interfaces. I am constantly
                 learning new technologies, improving my coding skills, and
@@ -71,7 +71,7 @@ const Home = () => {
               <div className="flex items-center gap-2 ">
                 <CiLocationOn className="text-lg sm:text-xl md:text-2xl" />
                 <p className="text-sm sm:text-base md:text-base lg:text-base">
-                  Farmgate, Bangladesh
+                  Farmgate, Dhaka, Bangladesh
                 </p>
               </div>
 
